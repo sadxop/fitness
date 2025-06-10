@@ -875,6 +875,10 @@ input[type=number] {
   margin-bottom: 60px;
 }
 
+.footer-logo-image{
+  height: auto;
+}
+
 .footer-description{
   text-align: left;
 }
@@ -957,6 +961,10 @@ input[type=number] {
   background-color: var(--color-dark-alternate);
 }
 
+.footer-copyright{
+  font-size: 14px;
+}
+
 
 @media (max-width: 1919px) {
   .motivation-card-image {
@@ -1023,7 +1031,7 @@ input[type=number] {
     height: 360px;
   }
 
-   .calculate {
+    .calculate {
     padding-block: 100px;
   }
 
@@ -1045,6 +1053,22 @@ input[type=number] {
 
   .calculate-table tfoot td {
     padding-top: 10px;
+  }
+
+  .footer-main{
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .footer-header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .footer-body{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
   }
 }
 
@@ -1166,5 +1190,21 @@ input[type=number] {
 
   .family-body{
     column-gap: 12px;
+  }
+
+  .footer-body{
+    grid-template-columns: 1fr
+  }
+
+  .footer-main{
+    padding-top: 50px;
+  }
+
+  .footer-header:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+  .footer-subscribe:not(:last-child){
+    margin-bottom: 40px;
   }
 }
